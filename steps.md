@@ -27,9 +27,13 @@
 
 ### image rendering issues
 
-- mobile -> desktop
+- problems
+  - mobile -> desktop
   - hide one of each depending on screen side.
   - when switching the sides, the desktop image isn't rendered correctly
+
+- solution:
+  - render images via CSS
 
 ### desktop design
 
