@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FM-Simple-Signup-Form](https://github.com/TSune-web/FM-Simple-Signup-Form.git)
+- Live Site URL: [FM-Simple-Signup-Form](https://tsune-web.github.io/FM-Simple-Signup-Form/)
 
 ## My process
 
@@ -43,10 +43,13 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Pixel Perfect Pro
 
 ### What I learned
 
-```css - Adjacent sibling combinator "+"
+Adjacent sibling combinator "+"
+
+```css
 form.submitted .form__field--input:invalid + .form__field--error {
   display: block;
   float: right;
