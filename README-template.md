@@ -28,15 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![FM-Signup_form](./solutions/FM-Sign_up_form_desktop.png)
 
 ### Links
 
@@ -54,28 +46,33 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```css - Adjacent sibling combinator "+"
+form.submitted .form__field--input:invalid + .form__field--error {
+  display: block;
+  float: right;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--red);
+  transform: translateY(-0.5rem);
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+function isFormFieldNotValid(formField) {
+  return !formField.checkValidity();
+}
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+1. Rendering images
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- At the start of this project, I struggled with how images should be rendered like, "Is it better from HTML using img tags" or "Is it better via css background-image". I'll continue to learn more about image rendering and to have control over manipulating background styling.
+
+2. Validation
+
+- I couldn't figure out the logic of validating form fields. I'll try to see different approaches and gain a better understanding of the core logic of validation using JavaScript.
 
 ### Useful resources
 
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidity) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) - This helped me understand css selectors better. I also learned some JavaScript methods on the DOM elements.
